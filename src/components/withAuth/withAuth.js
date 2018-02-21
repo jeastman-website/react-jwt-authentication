@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import AuthService from '../../services/AuthService'
+import Config from '../../services/Config'
 
 function withAuth(AuthComponent) {
-  const Auth = new AuthService('http://localhost:8080')
+  const Auth = new AuthService(Config.API_URL)
 
   return class AuthWrapped extends Component {
     constructor() {
