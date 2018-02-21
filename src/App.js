@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 
 import AuthService from './services/AuthService'
-import withAuth from './components/withAuth'
+import withAuth from './components/withAuth/withAuth'
 
 const Auth = new AuthService()
 

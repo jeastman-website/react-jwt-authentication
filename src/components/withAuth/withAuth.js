@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AuthService from '../services/AuthService'
+import AuthService from '../../services/AuthService'
 
 function withAuth(AuthComponent) {
   const Auth = new AuthService('http://localhost:8080')
